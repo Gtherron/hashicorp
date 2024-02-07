@@ -1,3 +1,5 @@
+
+
 packer {
   required_plugins {
     amazon = {
@@ -21,4 +23,9 @@ source "amazon-ebs" "ubuntu" {
     owners      = ["099720109477"]
   }
   ssh_username = "ubuntu"
+}
+build {
+  sources = [
+    "source.amazon-ebs.ubuntu"
+  ]
 }
