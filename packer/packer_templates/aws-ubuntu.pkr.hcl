@@ -1,8 +1,8 @@
-
 source "amazon-ebs" "ubuntu" {
   ami_name      = "packer-ubuntu-aws-{{timestamp}}"
   instance_type = "t2.micro"
-  region        = "us-east-1"
+  region        = "us-west-2"
+  ami_regions   = ["us-west-2", "us-east-1", "eu-central-1"]
   source_ami_filter {
     filters = {
       name                = "ubuntu/images/*ubuntu-jammy-22.04-amd64-server-*"
@@ -13,9 +13,11 @@ source "amazon-ebs" "ubuntu" {
     owners      = ["099720109477"]
   }
   ssh_username = "ubuntu"
-}
-build {
-  sources = [
-    "source.amazon-ebs.ubuntu"
-  ]
+  tags = {
+    "Name"        = "MyUbuntuImage"
+    "Environment" = "Production"
+    "OS_Version"  = "Ubuntu 22.04"
+    "Release"     = "Latest"
+    "Created-by"  = "Packer"
+  }
 }
