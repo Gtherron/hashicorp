@@ -8,7 +8,16 @@
       "artifact_id": "us-east-1:ami-0d93bc009f8d862b3",
       "packer_run_uuid": "9acb49bd-fd01-c9e1-38cb-48df294f1c96",
       "custom_data": null
+    },
+    {
+      "name": "windows-2016",
+      "builder_type": "amazon-ebs",
+      "build_time": 1708399707,
+      "files": null,
+      "artifact_id": "us-east-1:ami-0b016bc130861e651",
+      "packer_run_uuid": "0f84e4ea-6925-03e1-3802-d5271144f85b",
+      "custom_data": null
     }
   ],
-  "last_run_uuid": "9acb49bd-fd01-c9e1-38cb-48df294f1c96"
+  "last_run_uuid": "0f84e4ea-6925-03e1-3802-d5271144f85b"
 }
