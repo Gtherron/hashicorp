@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "name": "windows-2019",
+      "builder_type": "amazon-ebs",
+      "build_time": 1708396113,
+      "files": null,
+      "artifact_id": "us-east-1:ami-0d93bc009f8d862b3",
+      "packer_run_uuid": "9acb49bd-fd01-c9e1-38cb-48df294f1c96",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "9acb49bd-fd01-c9e1-38cb-48df294f1c96"
+}
